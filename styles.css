@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  background: transparent;
+  position: fixed;
+  z-index: 2;
+}
+
+.header__quote-button {
+  background-color: #ff4d01;
+  padding: 15px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.header__nav {
+  display: flex;
+  width: 75%;
+  justify-content: end;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  margin: 25px 150px 0;
+}
+
+.header__link {
+  color: white;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.section-one {
+  position: relative;
+  height: 65rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.section-one__background {
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("img/section1.jpeg");
+  filter: brightness(0.5) sepia(0.5) blur(1px);
+}
+
+.section-one__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  height: 60rem;
+  width: 40rem;
+  color: white;
+  z-index: 1;
+}
+
+.section-one__headline {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 84px;
+  text-align: center;
+}
+
+.section-one__text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+}
+
+.section-one__quote-button {
+  background-color: #ff4d01;
+  padding: 15px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.section-one__buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.section-one__service-button {
+  padding: 15px;
+  background-color: #ff4d01;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.section-two {
+  padding: 50px 0;
+  height: 60rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-two__image {
+  position: relative;
+  background-image: url("img/section2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 30rem;
+  height: 42.5rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.section-two__square {
+  position: absolute;
+  border: 3px solid #ff4d01;
+  width: 10rem;
+  height: 10rem;
+  top: -2rem;
+  left: -2rem;
+}
+
+.section-two__wrapper-content {
+  margin: 0 0 0 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 4rem;
+  width: 40rem;
+}
+
+.section-two__about {
+  color: #ff4d01;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+.section-two__headline {
+  font-weight: 400;
+  font-size: 3.5rem;
+}
+
+.section-two__text {
+  font-weight: 400;
+  color: grey;
+  line-height: 2rem;
+}
+
+.section-two__numbers {
+  display: flex;
+  gap: 5rem;
+}
+
+.section-two__number-value {
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: black;
+  margin: 5px 0 5px;
+}
+
+.section-two__number-plus {
+  color: #ff4d01;
+}
+
+.section-two__number-text {
+  color: grey;
+}
+
+.section-two__about-button {
+  border: 1px solid black;
+  padding: 15px;
+  color: black;
+  background-color: transparent;
+  cursor: pointer;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.section-three {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-three__our-services {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.section-three__headline-box {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10rem;
+  margin: 0px 0px 100px;
+  padding: 15px;
+}
+
+.section-three__headline-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+}
+
+.section-three__our-services {
+  color: #ff4d01;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.section-three__headline {
+  font-size: 3.5rem;
+  font-weight: 400;
+  width: 30rem;
+}
+.section-three__buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.section-three__button {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 15px;
+  width: 8rem;
+}
+
+.section-three__button--orange {
+  background-color: #ff4d01;
+  color: #fff;
+  padding: 15px;
+  width: 8rem;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+
+.section-three__content-services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 5rem;
+  width: 80%;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.service-card__image {
+  width: 4.5rem;
+}
+
+.service-card__title {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+.service-card__description {
+  font-size: 1.2rem;
+  color: grey;
+  line-height: 2rem;
+}
+
+.service-card__separator-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.service-card__separator {
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: black;
+}
+
+.service-card__button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 300;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.5s;
+}
+
+.service-card__button:hover {
+  color: black;
+  background-color: #ff4d01;
+  transition: 0.5s;
+}
+
+.section-four {
+  width: 100%;
+  position: relative;
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: 40rem;
+}
+
+.section-four__background {
+  position: absolute;
+  inset: 0;
+  background-image: url("img/section4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-four__content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 2rem;
+  width: 40rem;
+  margin: 0 0 0 10rem;
+  z-index: 1;
+}
+
+.section-four-headline {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.section-four__text {
+  font-size: 1.2rem;
+  color: grey;
+  line-height: 2rem;
+}
+
+.section-four__buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.section-four__button {
+  border: 1px solid black;
+  padding: 15px;
+  color: black;
+  background-color: transparent;
+  cursor: pointer;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.section-four__button--orange {
+  border: 1px solid transparent;
+  padding: 15px;
+  color: white;
+  background-color: #ff4d01;
+  cursor: pointer;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
