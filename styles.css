@@ -89,7 +89,7 @@
 
 .section-one__quote-button {
   background-color: #ff4d01;
-  padding: 15px;
+  padding: 15px 20px;
   border: none;
   color: white;
   cursor: pointer;
@@ -101,10 +101,10 @@
 }
 
 .section-one__service-button {
-  padding: 15px;
-  background-color: #ff4d01;
+  padding: 10px 20px;
+  background-color: transparent;
   color: white;
-  border: none;
+  border: 1px solid white;
   cursor: pointer;
 }
 
@@ -186,7 +186,7 @@
 }
 
 .section-two__about-button {
-  border: 1px solid black;
+  border: 1.5px solid black;
   padding: 15px;
   color: black;
   background-color: transparent;
@@ -379,4 +379,72 @@
   background-color: #ff4d01;
   cursor: pointer;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.section-five {
+  padding: 25px;
+  margin: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-five__content-part-1 {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  width: 75%;
+}
+
+.section-five__inner-content-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.section-five__image img {
+  width: 35rem;
+}
+
+.section-five__headline--orange {
+  color: #ff4d01;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.section-five__headline {
+  font-size: 3.5rem;
+  font-weight: 400;
+  width: 30rem;
+}
+
+.section-five__text {
+  color: gray;
+  line-height: 2rem;
+}
+
+.section-five__points-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 15px 0;
+}
+
+.section-five__point {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.checkmark {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ff4d01;
+  line-height: 1;
+  margin-top: 2px;
 }
