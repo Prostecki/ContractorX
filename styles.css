@@ -765,7 +765,7 @@
 
 .section-seven__headline-buttons {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 1rem;
   width: 75%;
 }
