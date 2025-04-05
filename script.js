@@ -52,3 +52,34 @@ window.addEventListener("resize", () => {
   track.style.transition = "none";
   track.style.transform = `translateX(${-index * slideWidth}px)`;
 });
+
+// Select the header element
+const header = document.querySelector(".header");
+
+// Create an invisible "sentinel" element that will help us detect when the header scrolls out of view
+const sentinel = document.createElement("div");
+sentinel.style.position = "absolute";
+sentinel.style.top = "0";
+sentinel.style.width = "100%";
+sentinel.style.height = "1px";
+document.body.prepend(sentinel);
+
+// Create an IntersectionObserver that watches the sentinel
+const observer = new IntersectionObserver(
+  ([entry]) => {
+    // When the sentinel is not intersecting (i.e., scrolled out of view), we add the "scrolled" class
+    if (!entry.isIntersecting) {
+      header.classList.add("scrolled");
+    } else {
+      // If the sentinel is in view, remove the class
+      header.classList.remove("scrolled");
+    }
+  },
+  {
+    root: null, // Observe within the viewport
+    threshold: 0, // Trigger as soon as even one pixel is not visible
+  }
+);
+
+// Start observing the sentinel
+observer.observe(sentinel);
